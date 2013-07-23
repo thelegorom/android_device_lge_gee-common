@@ -326,5 +326,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.disable.hw_accel=false \
     persist.sys.ui.hw=1
 
+PRODUCT_COPY_FILES += \
+	device/lge/gee-common/volume.cfg:system/etc/volume.cfg
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
