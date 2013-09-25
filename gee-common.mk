@@ -325,6 +325,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.disable.hw_accel=false \
     persist.sys.ui.hw=1
 
+# for Gecko to support bluedroid stack
+PRODUCT_PACKAGES += \
+	bluetooth.default
+
 PRODUCT_COPY_FILES += \
 	device/lge/gee-common/volume.cfg:system/etc/volume.cfg
 
