@@ -699,7 +699,7 @@ void QCameraHardwareInterface::loadTables()
 
 rat_t getRational(int num, int denom)
 {
-    rat_t temp = {num, denom};
+    rat_t temp = {static_cast<uint32_t>(num, denom)};
     return temp;
 }
 
