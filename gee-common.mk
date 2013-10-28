@@ -327,7 +327,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # for Gecko to support bluedroid stack
 PRODUCT_PACKAGES += \
-	bluetooth.default
+	bluetooth.default \
+	nfcd
 
 PRODUCT_COPY_FILES += \
 	device/lge/gee-common/volume.cfg:system/etc/volume.cfg
