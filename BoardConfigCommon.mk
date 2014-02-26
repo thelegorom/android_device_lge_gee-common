@@ -161,3 +161,10 @@ TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/usb-otg"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
+
+# Recovery
+ENABLE_LIBRECOVERY := true
+RECOVERY_EXTERNAL_STORAGE := /data/media/0
+SYSTEM_FS_TYPE        := ext4
+SYSTEM_PARTITION_TYPE := EMMC
+SYSTEM_LOCATION       := /dev/block/platform/msm_sdcc.1/by-name/system
