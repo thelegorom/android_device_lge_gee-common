@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+# Kernel init.d script
+PRODUCT_COPY_FILES += \
+	device/lge/gee-common/conf/00_frandom:system/etc/init.d/00_frandom
+
 PRODUCT_COPY_FILES += \
 	kernel/lge/gee/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	kernel/lge/gee/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
