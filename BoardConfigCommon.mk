@@ -173,3 +173,13 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
 
 #Asserts
 TARGET_OTA_ASSERT_DEVICE := gee,geeb,geehrc,e975,geehrc_4g_spr,geespr,ls970,geehrc4g,geehrc4g_spr_us,geebus,e970,e973,e971,geeb_att_us
+
+# Graphite stuff
+ENABLE_GRAPHITE := true
+
+# List modules for flo that break with graphite so it can be disabled
+ifneq ($(filter third_party_icu_icuuc_host_gyp,$(LOCAL_MODULE)),)
+LOCAL_DISABLE_GRAPHITE := true
+else
+LOCAL_DISABLE_GRAPHITE := false
+endif
