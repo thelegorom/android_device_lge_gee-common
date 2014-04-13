@@ -178,4 +178,7 @@ TARGET_OTA_ASSERT_DEVICE := gee,geeb,geehrc,e975,geehrc_4g_spr,geespr,ls970,geeh
 ENABLE_GRAPHITE := true
 
 # List modules for flo that break with graphite so it can be disabled
-MOD_LIST += third_party_icu_icuuc_host_gyp
+MOD_LIST += \
+    third_party_icu_icuuc_host_gyp \
+    libstagefright_mp3dec \
+    libstagefright_amrwbenc
